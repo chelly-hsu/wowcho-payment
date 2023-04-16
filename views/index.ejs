@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <p>渦潮WowChao <%= title %>
+  </p>
+  <form action="https://ccore.newebpay.com/MPG/mpg_gateway" method="post">
+    <input type="text" name="MerchantID" value="MS148643205">
+    <input type="hidden" name="TradeSha" value="A340F10465D6EE86C37AEAFBB262C1DF14AC441D095585E218C7B0C126813D65">
+    <input type="hidden" name="TradeInfo"
+      value="051a6572ac6e44f3413dc29c0e37ce7192bb13de348d7afdab9f7dbd85955caf3000c1db1ee6a6df34a619d97f3eda5972e06ecb509260deee7fa6adbf1d2d4e34bf319da4ae18d34cc00cb6afdfbc53ade707c2e3c175d0fbbdf321345bbbe75043c4b509d88ca2285fc255ca4b6181ddad529025db03ee6ae4dd9c30a6d52f2045b223b805d407e36ea6d48141d03ab78f955fe2ce84c825b83c4bfc1f0351">
+    <input type="text" name="TimeStamp" value="1681658800">
+    <input type="text" name="Version" value="1.5">
+    <input type="text" name="MerchantOrderNo" value="1681658800">
+    <input type="text" name="Amt" value="74">
+    <input type="email" name="Email" value="wowcho2023@gmail.com">
+    <button type="submit">進行選擇支付方式</button>
+  </form>
+</body>
+
+</html>
